@@ -1,0 +1,21 @@
+<h1>Login</h1>
+<%= form_for(:reviewer, url: sessions_path) do |form| %>
+
+<div class="field">
+	<%= form.label :name %><br/>
+	<%= form.text_field :name %>
+
+	<p/>
+
+	<div class="field">
+		<%= form.label :password %><br/>
+		<%= form.password_field :password %>
+	</div> 
+
+	<div class="actions">
+		<%= form.submit "Login" %>
+	</div>
+
+</div>
+
+<% end %>
